@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="NetWork">
+      <UniqueIdentifier>{6c09c413-2a84-40c8-a08f-deb5f3abb518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{940c2a88-b465-476e-a97f-3793b0b178ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MakeMove">
+      <UniqueIdentifier>{c8585eb6-a54f-459c-8347-47dbf8f76b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MakeGenerator">
+      <UniqueIdentifier>{30e3f4c8-e93c-4e8b-b77c-0ed54b80c8f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{a6f5c809-83a0-452e-ae08-823990acc5cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{6afb75ae-9a58-4aa0-a18a-894f4b78db50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyIni">
+      <UniqueIdentifier>{bf0a1a12-21d9-4bb0-905f-0563f8c4c189}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dragon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetTimerDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\INet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\TcpNet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol\MyProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeMove\MakeMove.h">
+      <Filter>MakeMove</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveGenerator\MoveGenerator.h">
+      <Filter>MakeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="Kernel\Kernel.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\define.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\FactoryNet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\UdpNet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="MyIni\Myini.h">
+      <Filter>MyIni</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dragon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTimerDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol\MyProtocol.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeMove\MakeMove.cpp">
+      <Filter>MakeMove</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveGenerator\MoveGenerator.cpp">
+      <Filter>MakeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="Kernel\kernel.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork\UdpNet.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork\TcpNet.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="MyIni\MyIni.cpp">
+      <Filter>MyIni</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dragon.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Dragon.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Dragon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Board.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\chess.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

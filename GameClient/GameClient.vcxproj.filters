@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FileOpr">
+      <UniqueIdentifier>{a653e20f-d8db-4f30-9cdb-cb4891c64965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{a00b71d1-0850-4d7f-86b2-045fb0a849f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool">
+      <UniqueIdentifier>{b06736b7-4d43-4a4e-a256-68ac3fa321cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{6b0ab974-274c-413b-adb2-cb43832abbb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Observer">
+      <UniqueIdentifier>{fc495e49-762f-4071-9ec7-d7e016b99e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PackDef">
+      <UniqueIdentifier>{c0cfaf00-eea0-4f3f-b944-e8c2c5661b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{c4c06f1f-95af-4ddd-bb25-d5f1d0ab02a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyIni">
+      <UniqueIdentifier>{ac699a8e-d690-4fe5-ab0d-746e5d3b3e77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClientDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOpr\FileOpr.h">
+      <Filter>FileOpr</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOpr\IFile.h">
+      <Filter>FileOpr</Filter>
+    </ClInclude>
+    <ClInclude Include="Kernel\Kernel.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreaPool\ThreadPool.h">
+      <Filter>ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Observer.h">
+      <Filter>Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="PackDef\PackDef.h">
+      <Filter>PackDef</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Circle_Queue.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Lock.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LockQueue.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ShellEXE.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\FactoryNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\INet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\TcpNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\UdpNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="MyIni\Myini.h">
+      <Filter>MyIni</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClientDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOpr\FileOpr.cpp">
+      <Filter>FileOpr</Filter>
+    </ClCompile>
+    <ClCompile Include="Kernel\Kernel.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreaPool\ThreadPool.cpp">
+      <Filter>ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="PackDef\PackDef.cpp">
+      <Filter>PackDef</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\TcpNet.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\UdpNet.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="MyIni\MyIni.cpp">
+      <Filter>MyIni</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameClient.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\GameClient.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\GameClient.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\app1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\app2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="D:\app1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

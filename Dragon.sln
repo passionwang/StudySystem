@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dragon", "Dragon\Dragon.vcxproj", "{52CF1E05-04D0-4238-96AE-03BE4C77D144}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamePlat", "DragonServer\DragonServer.vcxproj", "{FDDB25A8-B08B-455C-8FD4-133FE440BF5F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient", "GameClient\GameClient.vcxproj", "{D0335641-1042-4BED-B93A-6FB67ED19D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52CF1E05-04D0-4238-96AE-03BE4C77D144}.Debug|Win32.ActiveCfg = Debug|Win32
+		{52CF1E05-04D0-4238-96AE-03BE4C77D144}.Debug|Win32.Build.0 = Debug|Win32
+		{52CF1E05-04D0-4238-96AE-03BE4C77D144}.Release|Win32.ActiveCfg = Release|Win32
+		{52CF1E05-04D0-4238-96AE-03BE4C77D144}.Release|Win32.Build.0 = Release|Win32
+		{FDDB25A8-B08B-455C-8FD4-133FE440BF5F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDDB25A8-B08B-455C-8FD4-133FE440BF5F}.Debug|Win32.Build.0 = Debug|Win32
+		{FDDB25A8-B08B-455C-8FD4-133FE440BF5F}.Release|Win32.ActiveCfg = Release|Win32
+		{FDDB25A8-B08B-455C-8FD4-133FE440BF5F}.Release|Win32.Build.0 = Release|Win32
+		{D0335641-1042-4BED-B93A-6FB67ED19D90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0335641-1042-4BED-B93A-6FB67ED19D90}.Debug|Win32.Build.0 = Debug|Win32
+		{D0335641-1042-4BED-B93A-6FB67ED19D90}.Release|Win32.ActiveCfg = Release|Win32
+		{D0335641-1042-4BED-B93A-6FB67ED19D90}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

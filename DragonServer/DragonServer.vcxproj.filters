@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{3324cb5d-c640-4a45-aebb-3bcd2fd027cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWork">
+      <UniqueIdentifier>{ede86056-4926-44af-8f65-66be0743de20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{5c870998-0c4e-47d3-aa08-ace015a3e742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{dfcdb9d1-bfd3-4fbb-b15a-a99afa3cdf59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{67cd5ac3-a277-4741-a62f-3a68d5697445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadPool">
+      <UniqueIdentifier>{22cc36d6-f8da-4141-8a90-8c3d9bfd246a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{9766e23b-4fb4-4955-8513-6c015a9a3dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileOpr">
+      <UniqueIdentifier>{b46e9f26-c621-40bb-beec-5a244982e950}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Kernel\Kernel.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TcpNet.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\UdpNet.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\mani.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol\MyProtocol.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool\ThreadPool.cpp">
+      <Filter>ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="DB\MyDao.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOpr\FileOpr.cpp">
+      <Filter>FileOpr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Kernel\Kernel.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\FactoryNet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\INet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TcpNet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\UdpNet.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\Control.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol\MyProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Circle_Queue.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Lock.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LockQueue.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool\ThreadPool.h">
+      <Filter>ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="DB\MyDao.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOpr\FileOpr.h">
+      <Filter>FileOpr</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOpr\IFile.h">
+      <Filter>FileOpr</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
