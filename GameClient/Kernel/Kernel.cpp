@@ -200,74 +200,31 @@ void CKernel::OnRecvData(const char* pData, long lDataLen,ENUM_RECV_TYPE eType)
 	{
 		//获取协议类型
 		WORD wType = *(WORD*)pData;
-		switch (wType)
+
+		//是否为文件的第一块
+		DWORD dwHeadLen = 0;
+		//INT64 i64FileKey = 0;
+		char szSerialize[DEF_MAX_BUF];
+		if (m_oFileHead.m_pFileHeadDownload == NULL)
 		{
-		case DEF_DOWNLOAD_RQ:
-			{
-				//TODO:
-				//转换会话为TCP会话
-				//STRU_TCP_SESSION* pTcpSession = (STRU_TCP_SESSION*)pSession;
-
-				//是否为文件的第一块
-				DWORD dwHeadLen = 0;
-				//INT64 i64FileKey = 0;
-				char szSerialize[DEF_MAX_BUF];
-				if (m_oFileHead.m_pFileHeadDownload == NULL)
-				{
-					//获取文件头
-					//pTcpSession->m_pFileHead = new STRU_FILE_HEAD;
-					//pTcpSession->m_pFileHead->UnSerialize(pData, lDataLen);
-					//dwHeadLen = pTcpSession->m_pFileHead->Serialize(szSerialize, DEF_MAX_BUF);
-
-					//获取文件头
-					m_oFileHead.m_pFileHeadDownload = new STRU_FILE_HEAD_DOWNLOAD;
-					m_oFileHead.m_pFileHeadDownload->UnSerialize(pData, lDataLen);
-					dwHeadLen = m_oFileHead.m_pFileHeadDownload->Serialize(szSerialize, DEF_MAX_BUF);
-
-					//////生成文件key
-					//m_oFileHead.m_i64FileKey = GetFileKey(
-					//	m_oFileHead.m_pFileHeadDownload->m_i64UserID,
-					//	m_oFileHead.m_pFileHeadDownload->m_wVersion,
-					//	m_oFileHead.m_pFileHeadDownload->m_wAppNameLen,
-					//	m_oFileHead.m_pFileHeadDownload->m_szAppName);
-					//pTcpSession->m_i64FileKey = GetFileKey(pTcpSession->m_pFileHead->m_i64UserID, 
-					//pTcpSession->m_pFileHead->m_wVersion, 
-					//pTcpSession->m_pFileHead->m_wAppNameLen, 
-					//pTcpSession->m_pFileHead->m_szAppName);
-				}
-				//计算投递的队列编号
-				//i64FileKey = m_oFileHead.m_i64FileKey;
-				//long lIndex = GetPostQueueNum(i64FileKey);
-				//创建任务
-				CFileTransTask* pTask = new CFileTransTask;
-				//初始化任务
-				pTask->m_i64UserID = m_oFileHead.m_pFileHeadDownload->m_i64UserID;
-				//pTask->m_i64FileKey = i64FileKey;
-				pTask->m_pFileHead = &m_oFileHead;
-				pTask->m_dwFileSize = m_oFileHead.m_pFileHeadDownload->m_dwFileLength;
-				pTask->m_wFileNameLen = m_oFileHead.m_pFileHeadDownload->m_wAppNameLen;
-				memcpy(pTask->m_szFileName, m_oFileHead.m_pFileHeadDownload->m_szAppName, pTask->m_wFileNameLen);
-				pTask->m_dwFileLength = lDataLen - dwHeadLen;
-				pTask->m_pFileContent = new char[pTask->m_dwFileLength];
-				memcpy(pTask->m_pFileContent, &pData[dwHeadLen], pTask->m_dwFileLength);
-				/*pTask->m_i64UserID = pTcpSession->m_pFileHead->m_i64UserID;
-				pTask->m_i64FileKey = i64FileKey;
-				pTask->m_pSession = (STRU_TCP_SESSION*)pSession;
-				pTask->m_dwFileSize = pTcpSession->m_pFileHead->m_dwFileLength;
-				pTask->m_wFileNameLen = pTcpSession->m_pFileHead->m_wAppNameLen;
-				memcpy(pTask->m_szFileName, pTcpSession->m_pFileHead->m_szAppName, pTask->m_wFileNameLen);
-				pTask->m_dwFileLength = lDataLen - dwHeadLen;
-				pTask->m_pFileContent = new char[pTask->m_dwFileLength];
-				memcpy(pTask->m_pFileContent, &pData[dwHeadLen], pTask->m_dwFileLength);*/
-				//投递
-				m_pFileTransQueue.PushQueue(pTask);
-			}
-			break;
-		case DEF_UPLOAD_RQ:
-			break;
-		default:
-			break;
+			//获取文件头
+			m_oFileHead.m_pFileHeadDownload = new STRU_FILE_HEAD_DOWNLOAD;
+			m_oFileHead.m_pFileHeadDownload->UnSerialize(pData, lDataLen);
+			dwHeadLen = m_oFileHead.m_pFileHeadDownload->Serialize(szSerialize, DEF_MAX_BUF);
 		}
+		//创建任务
+		CFileTransTask* pTask = new CFileTransTask;
+		//初始化任务
+		pTask->m_i64UserID = m_oFileHead.m_pFileHeadDownload->m_i64UserID;
+		pTask->m_pFileHead = &m_oFileHead;
+		pTask->m_dwFileSize = m_oFileHead.m_pFileHeadDownload->m_dwFileLength;
+		pTask->m_wFileNameLen = m_oFileHead.m_pFileHeadDownload->m_wAppNameLen;
+		memcpy(pTask->m_szFileName, m_oFileHead.m_pFileHeadDownload->m_szAppName, pTask->m_wFileNameLen);
+		pTask->m_dwFileLength = lDataLen - dwHeadLen;
+		pTask->m_pFileContent = new char[pTask->m_dwFileLength];
+		memcpy(pTask->m_pFileContent, &pData[dwHeadLen], pTask->m_dwFileLength);
+		//投递
+		m_pFileTransQueue.PushQueue(pTask);
 	}
 }
 

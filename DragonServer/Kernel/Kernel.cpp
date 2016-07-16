@@ -775,6 +775,7 @@ BOOL CKernel::OnDownLoadGameRq(STRU_SESSION* pSession, long lLen, const char* pD
 	{
 		m_pTcpNet->SendData(m_mapTcpSession[oDataRq.m_i64UserID], pSendBuf, dwReadSize); 
 		//::send(sock, pSendBuf, dwReadSize, 0);
+		Sleep(500);
 	}
 	delete[] pSendBuf;
 	fclose(fp);

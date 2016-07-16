@@ -4,9 +4,9 @@
 #define __INCLUDE_INET_H__
 
 //IPµÿ÷∑∂®“Â
-//inet_addr("192.168.1.11");
-#define Server_IP_TCP GetHostIP()
-#define Server_IP_UDP GetHostIP()
+//inet_addr("192.168.1.11");GetHostIP()
+#define Server_IP_TCP inet_addr("192.168.1.11")
+#define Server_IP_UDP inet_addr("192.168.1.11")
 #define Server_TCP_PORT htons(12345)
 #define Server_UDP_PORT htons(54321)
 

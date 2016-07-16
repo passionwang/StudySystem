@@ -167,6 +167,7 @@ BOOL CDragonDlg::OnInitDialog()
 	m_bGameOver = FALSE;//this code does not contents in books.
 
 	m_oKernel.InitKernel(this);
+	this->MessageBox(L"Hello");
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 //预留kernel通知接口
